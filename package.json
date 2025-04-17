@@ -1,0 +1,25 @@
+{
+  "name": "frostfx",
+  "version": "1.0.0",
+  "description": "A lightweight particle system for snow and other effects in HTML5 games",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeindieru/frostfx.git"
+  },
+  "keywords": [
+    "snow",
+    "particles",
+    "gamedev",
+    "html5"
+  ],
+  "author": "codeindieru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeindieru/frostfx/issues"
+  },
+  "homepage": "https://github.com/codeindieru/frostfx#readme"
+}
