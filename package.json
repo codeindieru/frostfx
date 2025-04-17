@@ -1,10 +1,29 @@
 {
   "name": "frostfx",
   "version": "1.0.0",
-  "description": "A lightweight particle system for snow and other effects in HTML5 games",
-  "main": "src/index.ts",
+  "description": "Lightweight and flexible library for creating snow effects in HTML5 and Canvas",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "http-server -o demo.html"
   },
   "repository": {
     "type": "git",
@@ -14,12 +33,23 @@
     "snow",
     "particles",
     "gamedev",
-    "html5"
+    "html5",
+    "canvas",
+    "animation",
+    "weather",
+    "effects",
+    "typescript"
   ],
   "author": "codeindieru",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codeindieru/frostfx/issues"
   },
-  "homepage": "https://github.com/codeindieru/frostfx#readme"
+  "homepage": "https://github.com/codeindieru/frostfx#readme",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3",
+    "http-server": "^14.1.1"
+  },
+  "sideEffects": false
 }
